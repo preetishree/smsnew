@@ -10,7 +10,7 @@
 
 	<platform name="android">
         <config-file target="res/xml/config.xml" parent="plugins">
-    		<plugin name="SMS" value="com.plugin.SMS.SMS" />
+    		<plugin name="SMSPlugin" value="com.plugin.SMS.SMS" />
         </config-file>
     	
  		<source-file src="src/SMS/SMS.java" target-dir="src/com/plugin/SMS/" />
