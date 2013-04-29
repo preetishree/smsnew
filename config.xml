@@ -9,7 +9,7 @@
   <asset src="SMS.js" target="SMS.js" />
 
 	<platform name="android">
-        <config-file target="res/xml/config.xml" parent="plugins">
+        <config-file target="res/xml/config.xml" parent="/cordova/plugins">
     		<plugin name="SMSPlugin" value="com.plugin.SMS.SMS" />
         </config-file>
     	
