@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Example</title>
+
+    <script src="cordova-2.5.0.js"></script>
+   <script src="SMS.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+    // Wait for Cordova to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // Cordova is ready
+    //
+    function onDeviceReady() {
+      alert(5);
+   window.plugins.SMSPlugin.send("9778990150","Jenny! Jenny!",function () { 
+       alert('Message sent successfully');  
+    },
+    function (e) {
+        alert('Message Failed:' + e);
+    });
+        
+    }
+
+    // onSuccess: Get a snapshot of the current contacts
+    //
+   
+   // function successfulSMS() {
+     
+     //  alert("message send successfully");
+   // }
+
+    // onError: Failed to get the contacts
+    //
+   // function unsuccessfulSMS() {
+     //   alert('onError!');
+    //}
+
+    </script>
+    
+    
+    
+  </head>
+  <body>
+    <h1>Exampdle</h1>
+    <p>Find Contacts</p>
+    <div style="width:100%; height:80px;float:left;background:#f6f6f6;">
+      <table>
+        <tr>
+          <td>
+            <input type="text" id="msg" style="width:95%; height:75px;"/>
+          </td>
+          
+        </tr>
+      </table>
+    </div>
+    <div id="list"></div>
+      <table style="float:left;">
+        <tr>
+          <td>
+            Enter name
+          </td>
+          <td>
+            <input type="text" id="name" name="ename"/>
+          </td>
+          <td><input type="button" name="find" value="serach" id="btn" /></td>
+          
+        </tr>
+      
+      </table>
+  </body>
+</html>
