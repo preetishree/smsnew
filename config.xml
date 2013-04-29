@@ -1,3 +1,3 @@
 <gap:plugin name="SMSPlugin" />
-<plugin name="SMSPlugin" value="com.SMS.SMS"/>
+<plugin name="SMSPlugin" value="SMS.SMS"/>
 
