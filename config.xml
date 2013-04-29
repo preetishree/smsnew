@@ -6,7 +6,7 @@
 
     <name>SMSPlugin</name>
 
-  <asset src="www/PushNotification.js" target="PushNotification.js" />
+  <asset src="SMS.js" target="SMS.js" />
 
 	<platform name="android">
         <config-file target="res/xml/config.xml" parent="plugins">
